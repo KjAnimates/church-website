@@ -11,3 +11,34 @@ html, body {
     color: var(--theme-fg);
     font-family: var(--font-family);
 }
+
+.center-vertical {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    text-decoration: none;
+    transition: 500ms ease-out;
+}
+h1:hover {
+    color: #aaaaaa;
+}
+
+.svg-wiggle:hover svg, .wiggle:hover {
+    animation-name: wiggle;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+}
+
+@keyframes wiggle {
+    0% {
+        rotate: -12deg;
+    }
+    25% {
+        rotate: 12deg;
+    }
+    100% {
+        rotate: -12deg;
+    }
+}
