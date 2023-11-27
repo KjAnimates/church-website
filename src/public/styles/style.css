@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&display=swap');
+
+:root {
+    --theme-bg: #1a2a3b;
+    --theme-fg: #ffffff;
+    --font-family: 'Roboto'
+}
+
+html, body {
+    background-color: var(--theme-bg);
+    color: var(--theme-fg);
+    font-family: var(--font-family);
+}
