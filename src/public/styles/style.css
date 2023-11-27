@@ -3,13 +3,19 @@
 :root {
     --theme-bg: #1a2a3b;
     --theme-fg: #ffffff;
-    --font-family: 'Roboto'
+    --font-family: 'Roboto';
+    --orange: #ef5a00;
+    --white: #efefaf;
+    --grey: #aaaaaa;
+    --darkgrey: #3a3a3a;
+    --red: #fe122a;
 }
 
 html, body {
     background-color: var(--theme-bg);
     color: var(--theme-fg);
     font-family: var(--font-family);
+    margin: 0;
 }
 
 .center-vertical {
@@ -22,7 +28,30 @@ h1 {
     transition: 500ms ease-out;
 }
 h1:hover {
-    color: #aaaaaa;
+    color: var(--grey);
+}
+
+h2, h3, h4 {
+    color: var(--grey);
+}
+
+p {
+    line-height: 1.1;
+    margin: 1em;
+}
+
+h1 svg {
+    fill: var(--red) !important;
+    margin: 0 .5em;
+    width: 1em;
+    height: 1em;
+}
+
+.text-align-center {
+    text-align: center;
+}
+.no-margin {
+    margin: 0;
 }
 
 .svg-wiggle:hover svg, .wiggle:hover {
@@ -31,14 +60,31 @@ h1:hover {
     animation-iteration-count: 1;
 }
 
+.banner {
+    height: 15em;
+    background: linear-gradient(#101a2b 90%, var(--theme-bg) 100%);
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+b {
+    color: var(--orange);
+}
+
 @keyframes wiggle {
     0% {
-        rotate: -12deg;
+        rotate: 0deg;
     }
     25% {
         rotate: 12deg;
     }
-    100% {
+    65% {
         rotate: -12deg;
+    }
+    100% {
+        rotate: 0deg;
     }
 }
