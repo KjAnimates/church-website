@@ -70,6 +70,45 @@ h1 svg {
     align-items: center;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex .fill {
+    width: 100%;
+}
+
+code {
+    font-family: 'Fira Code';
+}
+
+#socials {
+    background-color: #101a2b;
+    padding: 1em;
+}
+
+.button {
+    --button-primary: #1a1a2a;
+    --button-secondary: var(--white, #ffffff);
+    --button-border: .1em solid var(--white);
+
+    box-shadow: 3px 3px 5px black;
+    padding: 1em;
+    background: var(--button-primary);
+    color: var(--button-secondary);
+    display: inline-block;
+    border-radius: .5em;
+    border: var(--button-border);
+    user-select: none;
+
+    transition: box-shadow 200ms, filter 200ms;
+}
+
+.button:active {
+    box-shadow: 2px 2px 2px black;
+    filter: brightness(125%);
+}
+
 b {
     color: var(--orange);
 }
